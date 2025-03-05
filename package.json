@@ -1,0 +1,17 @@
+{
+  "name": "dify-js",
+  "module": "index.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "bun build --minify --target=node --outdir=dist --outfile=index.js ./index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "types": "./types.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
