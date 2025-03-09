@@ -5,7 +5,8 @@
   "main": "./dist/index.js",
   "version": "0.0.1",
   "scripts": {
-    "build": "bun build --minify --target=node --outdir=dist --outfile=index.js ./index.ts"
+    "build": "bun build --minify --target=node --outdir=dist --outfile=index.js ./index.ts",
+    "types": "npx -p typescript tsc index.ts --declaration --allowJs --module es2020 --target es2020 --outDir dist"
   },
   "devDependencies": {
     "@types/bun": "latest"
